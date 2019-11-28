@@ -1,0 +1,38 @@
+{% if site.data.settings.testimonial-items %}
+
+<!-- testimonial -->
+<section class="section position-relative">
+  <div class="container">
+    <div class="row animatedParent animateOnce">
+      <div class="col-md-5 text-right animated fadeInUp delay-250">
+        <p class="font-tertiary paragraph-lg text-dark text-left-title">What our people say</p>
+      </div>
+    </div>
+    <div class="space-50"></div>
+    <div class="space-50"></div>
+    <!-- slider-item -->
+    <div class="testimonial-slider">
+      {% for testimonial-item in site.data.settings.testimonial-items %}
+     
+      <div class="testimonial-content">
+
+        <div class=" row animatedParent animateOnce ">
+          <div class="col-md-1"></div>
+          
+          <img class="col-md-4 img-testimonials img-fluid d-inline-block" src="{{ site.baseurl }}/assets/images/testimonial/employee-1.jpg">
+
+          <div class="col-md-4 text-left">
+            <h4 class="text-dark">{{ testimonial-item.name }}</h4>
+            <h6 class="text-dark mb-4">{{ testimonial-item.designation }}</h6>
+            <div class="line-divider">...</div>
+            <p class="text-dark">{{ testimonial-item.content   }}</p>
+          </div>
+        </div>
+      </div>
+        {% endfor %}
+       
+    </div>
+  </div>
+</section>
+<!-- /testimonial -->
+{% endif %}

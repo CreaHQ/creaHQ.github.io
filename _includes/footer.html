@@ -1,0 +1,31 @@
+<!-- footer -->
+<footer class="bg-footer footer-section">
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2 contact-info">
+          <!-- social icon -->
+          <ul class="list-unstyled position-relative  ml-5 mt-1 zindex-1 social-icons padding-20">
+            {% for social in site.data.settings.social %}
+            <li class="mb-3"><a class="text-white" href="{{ social.link }}"><i class="{{ social.icon }}" aria-label="Visit our social media pages"></i></a></li>
+            {% endfor %}
+          </ul>
+          <!-- /social icon -->
+        </div>
+        <div class="col-md-4 contact-info">
+          <h4 class="text-light">Email</h4>
+          <p class="text-white paragraph-lg font-secondary">{{ site.data.settings.email }}</p>
+          <h4 class="text-light">Phone</h4>
+          <p class="text-white paragraph-lg font-secondary">{{ site.data.settings.phone }}</p>
+          <h4 class="text-light">Address</h4>
+          <p class="text-white paragraph-lg font-secondary">{{ site.data.settings.address }}</p>  
+        </div>
+
+     <!-- <div>
+          <a class="twitter-timeline" data-lang="en" data-height="300" data-theme="light" href="https://twitter.com/CreaSWTeam?ref_src=twsrc%5Etfw">Tweets by CreaSWTeam</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div> -->
+      </div>
+    </div>
+  </section>
+  </footer>
+<!-- /footer -->

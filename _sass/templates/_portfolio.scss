@@ -1,0 +1,36 @@
+.page-title {
+  padding: 50px;
+
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  h1 {
+  animation: pulse 2s infinite;
+  }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.97);
+    }
+
+    70% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0.97);
+    }
+}
+
+.filter-controls {
+  li {
+    cursor: pointer;
+
+    &.active {
+      font-weight: bold;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+<header class="navigation fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand font-tertiary h3" href="{{ base.url }}/" aria-label="Logo gets you to homepage">
+      {% if site.data.settings.logo %}
+      <img class="logo-crea"src="{{ site.baseurl }}/assets/images/{{ site.data.settings.logo }}" alt="{{ site.data.settings.title }}">
+      {% endif %}
+    </a>
+    <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navigation"
+    aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><i class="ti-more-alt" aria-label="expand menu"></i></button>
+    <div class="collapse navbar-collapse text-center" id="navigation">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-tab hover-tab" href="/careers.html" aria-label="Go to section to learn more">careers</a>
+        </li>
+         <li class="nav-item">
+          <a class="current nav-tab hover-tab" href="/culture.html" aria-label="Go to section to learn more">culture</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-tab hover-tab" href="/contact.html" aria-label="Go to section to learn more">contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>

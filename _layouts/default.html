@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ 
+{% include head.html %}
+
+<body>
+
+<div class="main-line"></div>
+
+  {% if site.google-analytics %}
+  {% include google-analytics.html %}
+  {% endif %}
+  
+  {% include header.html %}
+
+  {{ content }}
+  
+  {% include footer.html %}
+
+  <!-- jQuery -->
+  <script src="{{ site.baseurl }}/assets/plugins/jQuery/jquery.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="{{ site.baseurl }}/assets/plugins/bootstrap/bootstrap.min.js"></script>
+  <!-- slick slider -->
+  <script src="{{ site.baseurl }}/assets/plugins/slick/slick.min.js"></script>
+  <!-- filter -->
+  <script src="{{ site.baseurl }}/assets/plugins/shuffle/shuffle.min.js"></script>
+
+  <!-- Main Script -->
+  <script src="{{ site.baseurl }}/assets/js/script.js"></script>
+  
+  
+  <script src="{{ site.baseurl }}/assets/js/navigation.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="{{ site.baseurl }}/assets/js/css3-animate-it-master/js/css3-animate-it.js"></script>
+  <script src="{{ site.baseurl }}/assets/js/TweenLite.min.js"></script>
+  <script src="{{ site.baseurl }}/assets/js/EasePack.min.js"></script>
+  <script src="{{ site.baseurl }}/assets/js/rAF.js"></script>
+  <script src="{{ site.baseurl }}/assets/js/demo-1.js"></script>
+
+
+</body>
+
+</html>

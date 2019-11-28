@@ -1,0 +1,59 @@
+.page-title-alt{
+  padding: 350px 0 70px;
+}
+
+.text-left-title {
+  font-weight: 800;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.border-thick{
+  border: 10px solid;
+}
+
+.drag-lg-top{
+  margin-top: -230px;
+  @include desktop {
+    margin-top: 0;
+  }
+}
+
+.page-title-alt{
+  .container{
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.about-us {
+    background: url('../images/backgrounds/background-about.jpg');
+    background-size: cover;
+    height: auto;
+    position: relative;
+   padding: 150px 0;
+}
+
+.about-us:before {
+  content: "";
+  position: absolute;
+  left: 0; right: 0;
+  top: 0; bottom: 0;
+  background: rgba(0,0,0,.5);
+}
+
+.our-services {
+  padding: 150px 0;
+    background: url('../images/backgrounds/background-cover.png');
+    background-size: cover;
+    height: auto;
+    position: relative;
+}
+
+.our-services:before {
+  content: "";
+  position: absolute;
+  left: 0; right: 0;
+  top: 0; bottom: 0;
+  background: rgba(0,0,0,.5);
+}

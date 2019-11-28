@@ -1,0 +1,63 @@
+.navigation{
+  padding: 20px;
+  transition: .3s ease;
+  background-color: transparent;
+  &.nav-bg {
+    background-color: $navbar-color;
+    padding: 0 20px;
+    @include desktop {
+      padding: 10px 20px;
+    }
+  }
+  @include desktop {
+    padding: 20px;
+    background: $navbar-color;
+  }
+
+
+  img {
+    width: 150px;
+    margin-top: 10px;
+  }
+}
+
+.navbar{
+
+  ul {
+
+  li {
+    text-align: right;
+    a {
+      font-family: $primary-font;
+      font-weight: 700;
+    text-transform: lowercase;
+      margin: 10px;
+      font-size: 16px;
+      color: $text-color-dark;
+
+
+  @include desktop {
+    font-size: 20px;
+    line-height: 40px;
+  }
+    }
+
+ a:hover {
+   border-bottom: solid 5px $tertiary-color;
+   padding-bottom: 5px;
+  }
+}
+
+
+.active{
+  border-bottom: solid 5px $primary-color;
+   padding-bottom: 5px;
+}
+
+}
+
+.navbar-light .navbar-toggler {
+  border-color: rgba(0,0,0,0);
+  color: rgba(0,0,0,1);
+}
+}
