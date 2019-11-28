@@ -1,0 +1,42 @@
+
+.footer-section {
+  padding-top: 0;
+
+	.container{
+		padding: 0 5%;
+	}
+}
+
+.section-on-footer {
+  margin-bottom: 0;
+}
+
+.shadow-down {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    box-shadow: 0px 0px 80.75px 14.25px rgba(224, 241, 255, 0.34);
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+  }
+}
+
+.contact-info {
+
+	h4 {
+		padding-top: 20px;
+	}
+
+}
+
+.hr-footer {
+	box-sizing: content-box;
+    height: 0;
+    margin-top: 50px;
+    border-top: 1px dashed rgba(255,255,255,.5);
+}

@@ -1,0 +1,60 @@
+
+.cover-img {
+  width: 100%;
+}
+
+.layer {
+  position: absolute;
+  z-index: 1;
+}
+
+
+.layer-bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.social-icons {
+  @media (max-width: 575px) {
+    visibility: hidden;
+  }
+}
+
+
+/* Header */
+.large-header {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  z-index: 1;
+}
+
+.mandala .large-header {
+  background: $background-color;
+}
+
+.main-title {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  color: $secondary-color;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%,-50%,0);
+  transform: translate3d(-50%,-50%,0);
+}
+
+.mandala .main-title {
+    text-transform: none;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.main-title .thin {
+  font-weight: 300;
+  font-family: $primary-font;
+}

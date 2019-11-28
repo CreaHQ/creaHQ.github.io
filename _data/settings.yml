@@ -1,0 +1,132 @@
+#-------------------------------
+# General Site Settings
+
+title: CREA - an expert software development team
+logo: logo-crea-full-light.png
+email: info@crea.si
+phone: +386 1 518 66 81
+address: Brnčičeva ulica 39, 1231 Ljubljana - Črnuče, Slovenia
+
+menu:
+- {name: careers, link: '/careers/'}
+- {name: Culture, link: '/Culture/'}
+- {name: Contact, link: '/contact/'}
+
+
+#-------------------------------
+# Google Analytics Section
+
+# Analytics helps you understand who visits your website.
+# Learn more at: http://support.google.com/analytics/answer/1008065
+
+# NOTE: If you want to use Google Analytics for basic web tracking: Just uncomment and enter your UA-Code here.
+
+google-analytics: # UA-XXXXXX-X
+
+
+
+#-------------------------------
+# Hero Section
+
+hero:
+  hero-title: we are crea <br>-<br> an expert software development team
+
+social:
+- {icon: "ti-facebook", link: "https://www.facebook.com/CreaBpm/"}
+- {icon: "ti-twitter", link: "https://twitter.com/creabpm"}
+- {icon: "ti-linkedin", link: "https://www.linkedin.com/company/crea-d-o-o-/about/"}
+
+
+#-------------------------------
+# About (Section and Page)
+
+# About Section
+blurb:
+  A company that delivers. Our biggest motivation are large scale enterprise level projects, full of technical challenges and complexity.
+
+blurb-title: We are an expert software development team.
+blurb-btn-link: '/about'
+blurb-btn-name: SEARCH JOBS
+
+
+
+#-------------------------------
+# Mission (Section and Page)
+
+# Mission Section
+mission:
+  Innovation, cutting edge technology and society impact of international projects we are working on are our motivation. We will continue to expand in all directions and stay a go-to expert software development company. </br></br> Time has and will continue to show the proof of our work.
+
+mission-title: OUR MISSION
+
+
+#-------------------------------
+# Video Section
+
+video:
+  video-title: play video
+
+
+
+#-------------------------------
+# careers Section
+
+careers-title: New jobs
+careers:
+- {
+    name: Security Expert,
+    icon: ti-lock,
+    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    short-description: 'Hack much?',
+    url: "#",
+  }
+- {
+    name: Blockchain Expert,
+    icon: ti-vector,
+    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    short-description: 'If you live for C++',
+    url: "#",
+  }
+- {
+    name: BPM Expert,
+    icon: ti-control-shuffle,
+    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    short-description: 'Processes are your thing',
+    url: "#",
+  }
+
+
+#-------------------------------
+# Testimonials Section
+
+testimonial-items:
+  - name: "Name Surname"
+    image: "assets/images/testimonial/employee-1.jpg"
+    designation : "Position"
+    content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    
+  - name: "Jesica Gomez"
+    image: "assets/images/testimonial/employee-2.jpg"
+    designation: "CEO, Funder"
+    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    
+  - name: "John Snow"
+    image: "assets/images/testimonial/employee-3.jpg"
+    designation: "CEO, Funder"
+    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+
+
+#-------------------------------
+# Client Slider Section
+
+client-slider-items:
+  - logo: ""
+    url: "#"
+
+
+
+#-------------------------------
+# Contact Section
+
+contact-title: Contact Info
+contact-email: info@crea.si
