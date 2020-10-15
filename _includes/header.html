@@ -1,22 +1,28 @@
 <header class="navigation fixed-top">
   <nav class="navbar navbar-expand-lg navbar-light">
-    <a class="navbar-brand font-tertiary h3" href="{{ base.url }}/" aria-label="Logo gets you to homepage">
-      {% if site.data.settings.logo %}
-      <img class="logo-crea"src="{{ site.baseurl }}/assets/images/{{ site.data.settings.logo }}" alt="{{ site.data.settings.title }}">
-      {% endif %}
+    <a class="navbar-logo" href="{{ base.url }}/" aria-label="Logo gets you to homepage">
+      
+      <div class="lrg-logo" >
+     </div>
     </a>
     <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navigation"
     aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><i class="ti-more-alt" aria-label="expand menu"></i></button>
-    <div class="collapse navbar-collapse text-center" id="navigation">
-      <ul class="navbar-nav ml-auto">
+    <div class="collapse navbar-collapse" id="navigation">
+      <ul class="navbar-nav ml-auto form-inline">
         <li class="nav-item">
           <a class="nav-tab hover-tab" href="/careers.html" aria-label="Go to section to learn more">careers</a>
         </li>
          <li class="nav-item">
           <a class="current nav-tab hover-tab" href="/culture.html" aria-label="Go to section to learn more">culture</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-tab hover-tab" href="/contact.html" aria-label="Go to section to learn more">contact</a>
+        <li class="nav-item mr-4">
+          <a class="current nav-tab hover-tab" href="/news.html" aria-label="Go to section to learn more">news</a>
+        </li>
+        <li class="nav-item ml-4">
+          <a class="button btn btn-secondary" href="https://apply.nchaincrea.com/" aria-label="Go to section to learn more">APPLY</a>
+        </li>
+        <li class="nav-item twitter-link">
+          <a href="https://twitter.com/crea_official" target="_blank"><img class="header-image" src="{{ site.baseurl }}/assets/images/icons/twitter.png"></a>
         </li>
       </ul>
     </div>

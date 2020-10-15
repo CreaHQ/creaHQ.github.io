@@ -1,6 +1,6 @@
 // Color Variables
 $primary-color: #EB4D4B;
-$secondary-color: #EB4D4B;
+$secondary-color: #04C6BB;
 $tertiary-color: #376DFA;
 $text-color: #222;
 $background-color: #F5F5F5;
@@ -12,12 +12,25 @@ $border-color: #c7c7c7;
 $black: #000;
 $white: #fff;
 $gray: #eaeaea;
+$mid-grey: #414141;
+$midlight-grey: #E2E2E2;
 $light-grey: rgba(34, 34, 34, 0.1);
+$event-primary: #EAB300;
 
 // $secondary-color: #ff525d;
 
 // Font Variables
-$primary-font: 'Rubik', sans-serif;
-$secondary-font: 'Rubik', sans-serif;
-$tertiary-font: 'Miriam Libre', sans-serif;
+$primary-font: canada-type-gibson, sans-serif;
+$secondary-font: canada-type-gibson, sans-serif;
+$tertiary-font: 'Nanum Myeongjo', serif;
 $icon-font: 'themify';
+$event-font: 'Montserrat', sans-serif;
+$event-font-bold: 'Montserrat', sans-serif;
+$event-font-body: 'Nunito Sans', sans-serif;
+
+$container-shadow: 0.5rem 0.5rem 2rem 0 rgba(black, 0.2);
+
+$gutter: 30px;
+$border-width: 4px;
+$dot-diameter: 8px;
+

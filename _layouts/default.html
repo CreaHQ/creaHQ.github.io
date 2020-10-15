@@ -17,7 +17,15 @@
   {{ content }}
   
   {% include footer.html %}
+  <div class="alert alert-dismissible text-center cookiealert" role="alert">
+  <div class="cookiealert-container">
+      We use cookies to ensure you get the best experience on our website. <a href="http://cookiesandyou.com/" target="_blank"><b>Learn more</a>
 
+      <button type="button" class="btn btn-secondary btn-sm acceptcookies" aria-label="Close">
+          I agree
+      </button>
+  </div>
+</div>
   <!-- jQuery -->
   <script src="{{ site.baseurl }}/assets/plugins/jQuery/jquery.min.js"></script>
   <!-- Bootstrap JS -->
@@ -29,17 +37,17 @@
 
   <!-- Main Script -->
   <script src="{{ site.baseurl }}/assets/js/script.js"></script>
-  
-  
-  <script src="{{ site.baseurl }}/assets/js/navigation.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="{{ site.baseurl }}/assets/js/css3-animate-it-master/js/css3-animate-it.js"></script>
   <script src="{{ site.baseurl }}/assets/js/TweenLite.min.js"></script>
   <script src="{{ site.baseurl }}/assets/js/EasePack.min.js"></script>
   <script src="{{ site.baseurl }}/assets/js/rAF.js"></script>
   <script src="{{ site.baseurl }}/assets/js/demo-1.js"></script>
+  <script src="{{ site.baseurl }}/assets/js/demo-2.js"></script>
+<script src="{{ site.baseurl }}/assets/js/cookiealert.js"></script>
+<script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/f720bcedeabfa03690f0b2b6b/3c6551850075ce0d1e3e56339.js");</script>
 
-
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/lightbox.css">
+<script type="text/javascript" src="{{ site.baseurl }}/assets/js/lightbox.js"></script>
 </body>
-
 </html>

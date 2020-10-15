@@ -1,12 +1,14 @@
-.page-title {
-  padding: 50px;
+.page-next {
+  padding: 150px 0 130px;
 
   .container {
     position: relative;
     z-index: 1;
   }
 
-  h1 {
+  h2 {
+    font-size: 40px;
+    font-weight: 600;
   animation: pulse 2s infinite;
   }
 }

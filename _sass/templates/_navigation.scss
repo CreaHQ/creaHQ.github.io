@@ -1,12 +1,12 @@
 .navigation{
-  padding: 20px;
+  padding: 20px 20px 10px 20px;
   transition: .3s ease;
-  background-color: transparent;
+  background-color: $navbar-color;
   &.nav-bg {
-    background-color: $navbar-color;
-    padding: 0 20px;
+    background-color: rgba(255,255,255,0.7);
+    padding: 0;
     @include desktop {
-      padding: 10px 20px;
+      background-color: rgba(255,255,255,1);
     }
   }
   @include desktop {
@@ -14,38 +14,85 @@
     background: $navbar-color;
   }
 
+.lrg-logo {
+  width: 160px;
+    height: 70px;
+    background: url(../images/nChainCREA-logo-full-hires.png);
+    background-repeat: no-repeat;
+    background-size: 160px 100%;
+}
 
-  img {
-    width: 120px;
+.sml-logo {
+  background: url("../images/square-logo.svg");
+  width: 80px;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-size: 80px 100%;
+}
+
+  .logo-crea {
+    width: 140px;
     margin-top: 10px;
+  }
+
+  .header-image {
+    height: 20px;
   }
 }
 
 .navbar{
+  height: 80px;
 
   ul {
 
   li {
     text-align: right;
+
+    .button {
+        color: $white !important;
+
+        &:hover {
+          border-bottom: none;
+          padding-bottom: 12px !important;
+        }
+
+        @include desktop {
+          margin: 20px 10px;
+        }
+    }
+
     a {
       font-family: $primary-font;
-      font-weight: 700;
-    text-transform: lowercase;
-      margin: 10px;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin: 20px;
       font-size: 16px;
       color: $text-color-dark;
 
 
-  @include desktop {
-    font-size: 20px;
-    line-height: 40px;
-  }
+      @include desktop {
+        font-size: 20px;
+        line-height: 40px;
+      }
     }
 
- a:hover {
-   border-bottom: solid 5px $tertiary-color;
-   padding-bottom: 5px;
-  }
+    a:hover {
+      border-bottom: solid 4px $secondary-color;
+      padding-bottom: 5px;
+    }
+
+    .btn-event {
+      padding: 10px;
+    }
+
+}
+
+
+
+.navbar-logo {
+  display: inline-block;
+    font-size: 1.25rem;
+    line-height: inherit;
 }
 
 
@@ -53,7 +100,6 @@
   border-bottom: solid 5px $primary-color;
    padding-bottom: 5px;
 }
-
 }
 
 .navbar-light .navbar-toggler {
@@ -61,3 +107,53 @@
   color: rgba(0,0,0,1);
 }
 }
+
+.navbar-nav {
+  .mr-4{
+   @include desktop {
+    margin-right: 0 !important;
+  }
+  }
+
+  .ml-4{
+   @include desktop {
+    margin-left: 0 !important;
+  }
+  }
+}
+
+
+.nav-link, .navbar {
+  padding: 0 !important;
+}
+
+.navbar-light .navbar-toggler {
+  border-color: rgba(0,0,0,0);
+}
+
+.navbar-nav {
+    margin-top: 10px;
+}
+
+
+.navbar-collapse {
+  
+  @include desktop {
+    background: $white;
+    padding-top: 20px;
+  }
+
+  .navbar-nav {
+    @include desktop {
+    display: inline;
+  }
+  }
+}
+
+.twitter-link {
+  @include desktop {
+    display: none;
+  }
+}
+
+

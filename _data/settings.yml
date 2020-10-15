@@ -2,15 +2,14 @@
 # General Site Settings
 
 title: CREA - an expert software development team
-logo: logo-crea-full-light.png
+logo: nChainCREA-logo-full-hires.png
 email: info@crea.si
 phone: +386 1 518 66 81
-address: Brnčičeva ulica 39, 1231 Ljubljana - Črnuče, Slovenia
+address: Crea d.o.o., Brnčičeva ulica 39, 1231 Ljubljana - Črnuče, Slovenia
 
 menu:
 - {name: careers, link: '/careers/'}
 - {name: Culture, link: '/Culture/'}
-- {name: Contact, link: '/contact/'}
 
 
 #-------------------------------
@@ -29,11 +28,11 @@ google-analytics: # UA-XXXXXX-X
 # Hero Section
 
 hero:
-  hero-title: we are crea <br>-<br> an expert software development team
+  hero-title: we are CREA <br>-<br> an expert software development team
 
 social:
 - {icon: "ti-facebook", link: "https://www.facebook.com/CreaBpm/"}
-- {icon: "ti-twitter", link: "https://twitter.com/creabpm"}
+- {icon: "ti-twitter", link: "https://twitter.com/crea_official"}
 - {icon: "ti-linkedin", link: "https://www.linkedin.com/company/crea-d-o-o-/about/"}
 
 
@@ -100,22 +99,32 @@ careers:
 # Testimonials Section
 
 testimonial-items:
-  - name: "Name Surname"
-    image: "assets/images/testimonial/employee-1.jpg"
-    designation : "Position"
-    content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-    
-  - name: "Jesica Gomez"
-    image: "assets/images/testimonial/employee-2.jpg"
-    designation: "CEO, Funder"
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-    
-  - name: "John Snow"
-    image: "assets/images/testimonial/employee-3.jpg"
-    designation: "CEO, Funder"
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+  - name: "Jaka Pust"
+    image: "assets/images/testimonial/employee-3.png"
+    designation: "Blockchain developer"
+    content: "After many years of experience in an international IT company, I decided it was time for a change in my career. I accepted a job at CREA in the field of Blockchain technologies because I think I can make a significant contribution with my years of expertise and, at the same time, learn a lot."
 
-
+  - name: "Tjaša Brajlih"
+    image: "assets/images/testimonial/employee-2.png"
+    designation: "Software Developer"
+    content: "I love it at CREA. As a new team member, I felt very welcomed by this amazing and positive team, which is always available to help me with any questions I have. I enjoy our morning coffee, as well. It's an excellent opportunity to find solutions to any work obstacles. We have several team building events every year, where you can relax and get to know colleagues better. Even though I have a long commute, I cannot wait to get to work every day."
+  
+  - name: "Andrej Vilhar"
+    image: "assets/images/testimonial/employee-1.png"
+    designation : "Project Manager"
+    content : "CREA provides me with exciting professional challenges and, more importantly, the opportunity for personal growth. We have a fantastic working environment and a great team that makes you feel good day in day out. It's not every day that you can say that about your job, but at CREA, I found the perfect balance.
+"
+    
+  - name: "Adriana Jereb"
+    image: "assets/images/testimonial/employee-4.png"
+    designation : "Software developer"
+    content : "Great and positive relationships with my co-workers are most important to me."
+    
+  - name: "Matjaž Kobal"
+    image: "assets/images/testimonial/employee-5.png"
+    designation : "Business Analysist"
+    content : "I've been at CREA for the eleventh year, having previously 'held' for a maximum of 4 years with the same employer. I think that speaks for itself."
+    
 #-------------------------------
 # Client Slider Section
 

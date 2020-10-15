@@ -1,16 +1,19 @@
 /* Button style */
+.button {
+  display: inline;
+  text-align: center;
+  margin-top: 20px;
+}
+
 .btn {
-  font-size: 18px;
+  font-size: 16px;
   font-family: $secondary-font;
   text-transform: none;
-  padding: 16px 44px;
-  border-radius: 0;
-  font-weight: 400;
+  padding: 14px 24px 12px;
   border: 0;
   position: relative;
-  z-index: 1;
   transition: .2s ease;
-  margin-top: 10px;
+  margin-top: 30px;
 
   &:focus {
     outline: 0;
@@ -34,15 +37,18 @@
 }
 
 .btn-primary {
-  background: $secondary-color;
+  background: $primary-color;
   color: $white;
+  font-family: $primary-font;
+  font-weight: 600;
+    border-radius: 48px;
 
   &:active {
     background: lighten($color: $secondary-color, $amount: 10) !important;
   }
 
   &:hover {
-    background: lighten($color: $secondary-color, $amount: 10);
+    background: lighten($color: $tertiary-color, $amount: 10);
   }
 
   &.focus,
@@ -52,6 +58,128 @@
   }
 }
 
+.btn-event {
+  background: $event-primary;
+  color: $white;
+  font-family: $event-font;
+  font-weight: 700;
+
+  &:active {
+    background: $primary-color !important;
+  }
+
+  &:hover {
+    background: $primary-color !important;
+    color: $white;
+  }
+}
+
+
+.btn-secondary {
+  background: $secondary-color;
+  color: $white;
+  font-family: $primary-font;
+  font-weight: 600;
+    border-radius: 48px;
+    display: flex;
+    margin-top: -5px;
+
+    @include desktop {
+        display: inherit;
+        text-align: center;
+      }
+
+  &:active {
+    background: lighten($color: $tertiary-color, $amount: 10) !important;
+  }
+
+  &:hover {
+    background: lighten($color: $tertiary-color, $amount: 10);
+  }
+
+  &.focus,
+  &.active {
+    background: lighten($color: $tertiary-color, $amount: 10) !important;
+    box-shadow: none !important;
+  }
+
+  &-light {
+    @extend .btn-secondary;
+    margin-left: -20px;
+    margin-top: 20px;
+    background: transparent;
+    color: $white;
+
+  &:hover {
+    background: none;
+    color: $white;
+    transform: translate3d(10px,0,0);
+  }
+
+  img {
+    margin-right: 10px;
+    display: inline;
+    vertical-align: middle;
+    border: 0;
+    width: auto;
+    height: 22px;
+  }
+  }
+
+  &-dark {
+    @extend .btn-secondary;
+    margin-left: -20px;
+    margin-top: 20px;
+    background: transparent;
+    color: $primary-color;
+
+  &:hover {
+    background: none;
+    color: $primary-color;
+    transform: translate3d(10px,0,0);
+  }
+
+  img {
+    margin-right: 10px;
+    display: inline;
+    vertical-align: middle;
+    border: 0;
+    width: auto;
+    height: 22px;
+  }
+  }
+}
+
+
+.btn-tertiary {
+  background: $tertiary-color;
+  color: $white !important;
+  padding: 10px 0;
+  margin-top: -10px;
+
+  &:active {
+    background: $secondary-color !important;
+  }
+
+  &:hover {
+    background: $secondary-color;
+  }
+
+  &.focus,
+  &.active {
+    background: $secondary-color !important;
+    box-shadow: none !important;
+  }
+
+  a {
+    font-weight: 400 !important;
+  }
+
+  a:hover {  
+    border-bottom: 0 !important;
+    padding-bottom: 5px;
+  }
+}
 
 .btn-transparent {
   background: transparent;

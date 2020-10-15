@@ -1,0 +1,57 @@
+---
+layout: default
+---
+<!-- page title -->
+<section class="page-title position-relative">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1 class="text-white font-tertiary"></h1>
+      </div>
+    </div>
+  </div>
+<!-- /page title -->
+
+<section class="section">
+  <div class="space-50"></div>
+  <div class="space-50"></div>
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-lg-12">
+        <h3 class="font-tertiary mb-5">{{ page.title | escape }}</h3>
+        <p class="font-secondary">Published on {{ page.date | date: '%b %d, %Y' }} by <span class="text-primary">{{ page.author }}</span
+            class="text-primary">{% for tag in page.tags %}<span>{{ tag }} </span>{% endfor %}</p>
+        <div class="content">
+          {{ content }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% if site.data.settings.disqus-identifier %} {% include disqus-comments.html %} {% endif %}
+
+<!-- all news -->
+<section class="section bg-white">
+  <div class="container">
+    <div class="row d-flex justify-content-center align-items-stretch">
+      <div class="col-12 text-center">
+        <h2 class="section-title">More News</h2>
+      </div>
+      {% for post in site.posts offset:0 limit:3 %}
+      <div class="col-lg-3 col-md-3 col-sm-6 mb-4">
+        <article class="card shadow">
+          <img class="rounded card-img-top" src="{{ site.baseurl }}/assets/images/news/{{ post.image }}" alt="{{ post.title }}">
+          <div class="card-body">
+            <p class="font-secondary">{{ post.date | date: '%b %d, %Y' }}</p>
+            <h4 class="card-title"><a class="text-dark" href="{{ post.url | relative_url }}">{{ post.title | escape }}</h4>
+            <p class="cars-text">{{ post.content | strip_html | truncate: 120 }}</p>
+            <button class="btn btn-secondary-dark" href="{{ post.url | relative_url }}" class="btn btn-xs btn-primary"><img src="/assets/images/icons/keep-reading-red.svg"></img>READ MORE</button>
+          </div>
+        </article>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<!-- /all news -->

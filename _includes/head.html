@@ -1,12 +1,29 @@
 <head>
   <meta charset="utf-8">
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.data.settings.title }}{% endif %}</title>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153705023-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'UA-153705023-2');
+</script>
   <!-- mobile responsive meta -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Crea - an expert software development team">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimal-ui" />
+  <meta name="title" content="CREA - an expert software development team">
+  <meta name="description" content="We are looking for talented and proactive developers that are not affraid of a challenge. Apply today and join our team.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="CREA - we dare to create" />
+  <meta property="og:description" content="We are on a lookout for talented developers to join our team. Apply for a position today." />
+  <meta property="og:image" content="{{ site.baseurl }}/assets/images/backgrounds/background-about1.png" />
+  <meta property="og:url" content="https://crea.si" />
+  <meta property="og:site_name" content="CREA - An expert software development team" />
+  <link rel="canonical" href="http://crea.si/index.html" />
   <!-- ** Plugins Needed for the Project ** -->
   <!-- Bootstrap -->
+
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/plugins/bootstrap/bootstrap.min.css">
   <!-- themefy-icon -->
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/plugins/themify-icons/themify-icons.css">
@@ -26,4 +43,6 @@
   <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/assets/images/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="96x96" href="{{ site.baseurl }}/assets/images/favicon-96x96.png">
 <link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl }}/assets/images/favicon-16x16.png">
+<!-- cookiealert.css -->
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/cookiealert.css">
 </head>

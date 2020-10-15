@@ -674,8 +674,8 @@ padding: 150px 0;
     grid-template-columns: minmax(300px, 1fr) minmax(300px, 1fr) minmax(300px, 1fr) minmax(300px, 1fr);
   }
   .cell--fig1 {
-    grid-row: 2;
-    grid-column: 1/span 2;
+    grid-row: 3;
+    grid-column: 2/span 2;
     display: block;
   }
   .cell:nth-of-type(2) {
@@ -691,8 +691,8 @@ padding: 150px 0;
     grid-column: 4;
   }
   .cell--fig2 {
-    grid-column: 2/span 2;
-    grid-row: 3;
+    grid-column: 1/span 2;
+    grid-row: 2;
 
     .cells-titles {
 	color: $text-color-light;
@@ -731,21 +731,66 @@ padding: 150px 0;
 }
 
 
-.cell--fig1 {
-    background-color: $light-grey;
+.cell--fig4 {
+    background: url("/assets/images/backgrounds/skill.png");
+    background-size: cover;
   }
+
+.cell--fig4  {
+   @media (max-width: 575px) {
+     background-position: -150px 0;
+   }
+ }
+
   .cell--fig2 {
-    background-color: $text-color-dark;
+    background: url("/assets/images/backgrounds/black-white.png");
   }
   .cell:nth-of-type(2) {
-    background-color: $white;
+     background-color: $secondary-color;
+
+    .cells-titles {
+    	color: $white;
+    }
+
+    p {
+    	color: $white;
+    }
   }
   .cell:nth-of-type(3) {
-    background-color: $white;
+    background-color: rgba(34,34,34,0.1);
   }
   .cell:nth-of-type(5) {
-    background-color: $light-grey;
+    background-color: $secondary-color;
+
+    .cells-titles {
+    	color: $white;
+    }
+
+    p {
+    	color: $white;
+    }
   }
+
+.cell--fig5 {
+    background: url("/assets/images/backgrounds/teamplayer.png");
+    background-size: cover;
+    align: top;
+
+  }
+
+.cell--fig5  {
+   @media (max-width: 575px) {
+     background-position: 0 -200px;
+   }
+ }
+
+  .cell--fig6 {
+    background: url("/assets/images/backgrounds/background-about1.png");
+    background-size: cover;
+
+  }
+
+
 
 
 .cell--fig2 {
@@ -763,8 +808,52 @@ padding: 150px 0;
 }
   }
 
-.divider-culture {
-  background: url('../images/backgrounds/background-cover.png');
-  background-size: cover;
-    height: 400px;
+.balance {
+		padding:0;
+		background: $light-grey;
+	img {
+		width: 100%;
+		height: auto;
+	}
+
+	.copy {
+		padding: 50px;
+	}
+}
+
+@media (max-width: 575px) {
+
+
+
+
+div#balance-copy {
+	order: 1;
+	-webkit-order: 1 !important;
+}
+
+div#balance-img {
+	order: 2;
+	-webkit-order: 2;
+}
+
+div#growth-copy {
+	order: 3;
+	-webkit-order: 3;
+}
+
+div#growth-img {
+	order: 4;
+	-webkit-order: 4;
+}
+
+div#health-copy {
+	order: 5;
+	-webkit-order: 5;
+}
+
+div#health-img {
+	order: 6;
+	-webkit-order: 6;
+}
+
 }

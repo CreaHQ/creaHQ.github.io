@@ -28,9 +28,13 @@
 
 .contact-info {
 
-	h4 {
-		padding-top: 20px;
+	p {
+		padding-top: 10px;
 	}
+
+  .info {
+    padding-top: 30px;
+  }
 
 }
 
@@ -39,4 +43,15 @@
     height: 0;
     margin-top: 50px;
     border-top: 1px dashed rgba(255,255,255,.5);
+}
+
+.btn-tertiary-b {
+  color: #fff !important;
+  margin-top: 0;
+  font-size: 16px;
+}
+
+.footer-icons {
+  color: $white;
+  font-size: 20px;
 }

@@ -17,8 +17,30 @@
 
 .social-icons {
   @media (max-width: 575px) {
-    visibility: hidden;
+    display: none;
   }
+}
+
+
+.large-header {
+  @media (max-width: 575px) {
+    background: url("/assets/images/backgrounds/b1.png");
+    left: 0;
+  }
+}
+
+#demo-canvas {
+  background: #F8F8F9;
+}
+
+#demo-canvas {
+  @media (max-width: 575px) {
+    display: none;
+  }
+}
+
+#demo-canvas-2 {
+  background: #222;
 }
 
 
@@ -32,29 +54,116 @@
   z-index: 1;
 }
 
-.mandala .large-header {
-  background: $background-color;
+/* Header */
+.large-header-2 {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+  background: url("/assets/images/conference/audience.jpg") no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
+
+.large-header-2 {
+  @media (max-width: 575px) {
+    height: 800px;
+    padding: 50px 20px;
+
+    h1 {
+      font-size: 28px;
+    }
+  }
+}
+
+.cover-3 {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: url("/assets/images/conference/learn.jpg");
+  background-size: cover;
+}
+
 
 .main-title {
   position: absolute;
   margin: 0;
   padding: 0;
+  top: 30%;
+  left: 10%;
+
+  .paragraph-md {
+    font-family: $secondary-font;
+    font-weight: 400;
+    text-align: left;
+  }
+
+  @media (max-width: 575px) {
+    top: 200px;
+    left: 20px;
+  }
+
+  a.btn {
+    margin-top: 20px;
+  }
+
+}
+
+.main-title-2 {
+  position: relative;
+  margin: 0;
+  padding: 0 20px;
   color: $secondary-color;
-  text-align: center;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate3d(-50%,-50%,0);
-  transform: translate3d(-50%,-50%,0);
+  text-align: left;
+
+  h2 {
+    font-size: 18px;
+  }
+}
+
+.main-title-2 {
+  @media (max-width: 575px) {
+    margin-top: 50px;
+  }
 }
 
 .mandala .main-title {
     text-transform: none;
-    font-size: 60px;
-    font-weight: 700;
+
+    img {
+      width: 180px;
+    }
 }
 
 .main-title .thin {
   font-weight: 300;
   font-family: $primary-font;
 }
+
+
+.capital-section-sum {
+    margin-bottom: 20px;
+    font-family: $primary-font;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.title {
+  font-family: $tertiary-font;
+  color: $text-color;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 70px;
+  text-align: left;
+  padding-bottom: 20px;
+
+  @media (max-width: 575px) {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+}
+

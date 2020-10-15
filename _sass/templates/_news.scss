@@ -1,0 +1,30 @@
+.news-section {
+    background: $secondary-color;
+    padding: 120px 0;
+
+    @media (max-width: 575px) {
+    padding: 60px 0;
+  }
+}
+
+
+.card-title {
+	font-size: 16px;
+    text-transform: uppercase;
+
+    a {
+    	
+    font-weight: 600;
+    }
+}
+
+
+
+
+.content p {
+	font-size: 16px;
+}
+
+.content p strong {
+	font-size: 18px;
+}

@@ -1,3 +1,22 @@
+$(function() { var logo = $(".lrg-logo"); $(window).scroll(function() {
+var scroll = $(window).scrollTop();
+
+    if (scroll >= 200) {
+      if(!logo.hasClass("sml-logo")) {
+        logo.hide();
+        logo.removeClass('lrg-logo').addClass("sml-logo").fadeIn( "slow");
+      }
+    } else {
+      if(!logo.hasClass("lrg-logo")) {
+        logo.hide();
+        logo.removeClass("sml-logo").addClass('lrg-logo').fadeIn( "slow");
+      }
+    }
+
+});
+});
+
+
 (function ($) {
     'use strict';
 
@@ -5,7 +24,7 @@
 
     // Sticky Menu
     $(window).scroll(function () {
-        if ($('.navigation').offset().top > 100) {
+        if ($('.navigation').offset().top > 140) {
             $('.navigation').addClass('nav-bg');
         } else {
             $('.navigation').removeClass('nav-bg');
@@ -125,6 +144,9 @@ $(document).ready(function() {
   });
 });
 
-
 })(jQuery);
+
+
+
+
 

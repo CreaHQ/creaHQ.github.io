@@ -1,0 +1,48 @@
+---
+layout: page
+---
+<!-- news -->
+<!-- latest news -->
+<section class="news-section section">
+  <div class="container">
+    <div class="row animatedParent animateOnce">
+      <div class="col-md-5 mr-4 text-right animated fadeInUp delay-250">
+        <p class="font-tertiary paragraph-lg text-light text-left-title">Latest news: nChain has acquired CREA</p>
+      </div>
+      <div class="col-md-5 ml-4 text-left animated fadeInUp delay-250">
+        <p class="font-secondary paragraph-md text-light">We are proud and excited to be part of  nChain family.
+</br></br>
+As before, we will allow the results of our work to speak  for of us in future as well.</p>
+<a class="btn btn-secondary-light" href="../2020/04/17/nchain-has-acquired-crea/"><img src="../assets/images/icons/keep-reading.svg"></img>READ MORE</a>
+      </div>
+        </div>
+    </div>
+    </div>
+  </div>
+</section>
+<!-- /latest news -->
+<!-- all news -->
+<section class="section">
+  <div class="container">
+    <div class="row d-flex justify-content-center align-items-stretch">
+      <div class="col-12 text-center">
+        <h2 class="section-title">More News</h2>
+      </div>
+      {% for post in site.posts %}
+      <div class="col-lg-3 col-md-3 col-sm-6 mb-4">
+        <article class="card shadow">
+          <img class="rounded card-img-top" src="{{ site.baseurl }}/assets/images/news/{{ post.image }}" alt="{{ post.title }}">
+          <div class="card-body">
+            <p class="font-secondary">{{ post.date | date: '%b %d, %Y' }}</p>
+            <h4 class="card-title"><a class="text-dark" href="{{ post.url | relative_url }}">{{ post.title | escape }}</h4>
+            <p class="cars-text">{{ post.content | strip_html | truncate: 120 }}</p>
+            <a class="btn btn-secondary-dark" href="{{ post.url | relative_url }}" class="btn btn-xs btn-primary"><img src="../assets/images/icons/keep-reading-red.svg"></img>READ MORE</a>
+          </div>
+        </article>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<!-- /all news -->
+<!-- /news -->
